@@ -6,11 +6,8 @@ int main(int argc, char const *argv[])
 {
 
 int capacidadeReservatorio = 0;
-int chuva [] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-int consumo [] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-int vazio []= {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-int cheio []= {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-int utilizacaoReservatorio [] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}; 
+int chuva [12], consumo [12], vazio [12], cheio [12];
+int utilizacaoReservatorio [13];
 
 printf("Reservatorio 1.0\n\n");
 printf("Informe a capacidade do reservatorio (em ''mm''): "); 
@@ -70,9 +67,7 @@ for (int i = 0; i < (sizeof (chuva) /sizeof (chuva[0])); i++) //Comunicando usuÃ
          printf(". CHEIO!!!");
      }
 }
-
-    printf("\n\n%d\n\n", (chuva[11] - consumo[11]));
-    printf("\n\nFIM!!!\n\n");
+    printf("\n\n")
     system ("PAUSE");
     return 0;
 }
