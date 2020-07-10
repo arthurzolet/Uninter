@@ -1,1 +1,1 @@
-# com.uninter
+Repositório para projetos da ADS
