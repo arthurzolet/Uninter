@@ -28,26 +28,49 @@ printf("\n");
 
 for (size_t i = 0; i < m; i++)
 {
-    printf("Digite a %da palavra: ", (i + 1) );
-    scanf("%s", &string[i]);
-    //printf("\n");
+    for (size_t j = 0; j < n; j++)
+    {
+        printf("Digite a %da letra da %da palavra: ", (j + 1), (i + 1) );
+        scanf("%s", &string[i][j]);
+    }
+    
 }
 
 for (size_t i = 0; i < m; i++)
 {
-    printf("\n%s", string[i] );
+    for (size_t j = 0; j < n; j++)
+    {
+        printf("%s", string[i][j] );
+    }
+    printf("\n");
 }
 
-
+/*
+for (size_t i = 0; i < m; i++)
+{
+    printf("Digite a %da palavra: ", (i + 1) );
+    scanf("%s", &string[i]);    
+    printf("\n%s\n", string[i] );
+    //printf("\n");
+}
+*/
+/*
+for (size_t i = 0; i < m; i++)
+{
+    printf("\n%s\n", string[i] );
+}
+*/
 /*
 printf("Digite: ");
 //scanf("%s", &string);
 gets(string);
 printf("%s\n", string);
-
+/*
 string[3];
 
 printf("%s\n", string);
+
+
 */
 
 printf("\nFIM!!!\n");
