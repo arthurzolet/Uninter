@@ -15,7 +15,7 @@ for (i=0;i < (sizeof (foo) /sizeof (foo[0]));i++) {
 
 int matriz [] = {12, 8, 0};
 
-printf("%d", (sizeof (matriz) /sizeof (matriz[0]));
+printf("%d", (sizeof (matriz) /sizeof (matriz[0])));
 
 
 for (size_t i = 0; i < sizeof matriz; i++) 
