@@ -1,1 +1,1 @@
-Repositório para projetos da ADS
+Repositório para projetos de ADS
