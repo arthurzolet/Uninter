@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int main(int argc, char const *argv[])
-{    
-    int item = 0; //Entrada de dados
+{
+    int item = 0;                                                                    //Entrada de dados
     int item1 = 0, item2 = 0, item3 = 0, item4 = 0, item5 = 0, item6 = 0, item7 = 0; //Variáveis de itens
-    double valorTotal = 0; //Valor total
+    double valorTotal = 0;                                                           //Valor total
 
     { //Imprimindo menu
         printf("Lancheria do Ze");
@@ -78,35 +77,41 @@ int main(int argc, char const *argv[])
         {
             printf("Cachorro-quente     -> 5,00 un. -> %d unidade(s)\n", item1);
             valorTotal += (5.00 * item1);
-        }if (item2 != 0)
+        }
+        if (item2 != 0)
         {
             printf("X-Salada            -> 8,79 un. -> %d unidade(s)\n", item2);
             valorTotal += (8.79 * item2);
-        }if (item3 != 0)
+        }
+        if (item3 != 0)
         {
             printf("X-Bacon             -> 9,99 un. -> %d unidade(s)\n", item3);
             valorTotal += (9.99 * item3);
-        }if (item4 != 0)
+        }
+        if (item4 != 0)
         {
             printf("Misto               -> 6,89 un. -> %d unidade(s)\n", item4);
             valorTotal += (6.89 * item4);
-        }if (item5 != 0)
+        }
+        if (item5 != 0)
         {
             printf("Salada              -> 4,80 un. -> %d unidade(s)\n", item5);
             valorTotal += (4.00 * item5);
-        }if (item6 != 0)
+        }
+        if (item6 != 0)
         {
             printf("Agua                -> 3,49 un. -> %d unidade(s)\n", item6);
             valorTotal += (3.49 * item6);
-        }if (item7 != 0)
+        }
+        if (item7 != 0)
         {
             printf("Refrigerante        -> 4,99 un. -> %d unidade(s)\n", item7);
             valorTotal += (4.99 * item7);
         }
     }
 
-    printf("Valor total: R$ %.2f\n", valorTotal); //Imprimindo valor total    
-    printf("\nVolte sempre!!!\n");    
-    system ("PAUSE");
+    printf("Valor total: R$ %.2f\n", valorTotal); //Imprimindo valor total
+    printf("\nVolte sempre!!!\n");
+    system("PAUSE");
     return 0;
 }
