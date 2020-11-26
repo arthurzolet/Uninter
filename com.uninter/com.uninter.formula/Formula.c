@@ -2,25 +2,26 @@
 #include <stdlib.h>
 #include <math.h>
 
-double calc_hexa(float L)
-{
-    float area = 0;
-    area = (3 * (L * L) * sqrt(3)) / 2;
-    return area;
-}
-
 int main(int argc, char const *argv[])
 {
-    float side = 0;
-    printf("Insira o valor de ''L'' do hexagono: ");
-    scanf("%f", &side);
-
-    while (side > 0)
+    struct ponto2d
     {
-        printf("A area do hexagono eh: %f\n", calc_hexa(side));
-        printf("\nInsira o valor de ''L'' do hexagono: ");
-        scanf("%f", &side);
+        int x, y;
+    };
+
+    struct ponto2d ponto_inicial;
+    struct ponto2d ponto_final;
+
+    int input;
+    printf("[1]-Digitar os valores do primeiro ponto\n[2]-Digitar os valores do segundo ponto\n[3]-Mostrar a distância entre os pontos\n[4]-Sair\n\nEntrada: ");
+    scanf("%d", &input);
+
+    if (input == 1)
+    {
+        printf("Digite o valor de ''X'' do ponto inicial: ");
+        scanf("%d", )
     }
+    
 
     printf("\n");
     system("PAUSE");
